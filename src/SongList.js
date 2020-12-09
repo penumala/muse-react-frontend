@@ -12,7 +12,8 @@ function SongList(props) {
         </Card.Content>
         <Card.Content extra>
           <Button onClick={() => props.deleteSong(song.id)}>Delete Song</Button>
-          <Button>Edit Song</Button>
+          <Button onClick={() => props.openAndEdit(song)}>Edit Song</Button>
+         
         </Card.Content>
       </Card>
     );
